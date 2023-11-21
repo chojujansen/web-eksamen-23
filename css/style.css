@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Special+Elite&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ----------------------------navigation---------------------------- */
+
+.nav-container {
+    background-color: orange;
+}
+
+.nav-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.nav-bar {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    width: 75px;
+    height: auto;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+#nav-home-link {
+    border-bottom: 2px solid #e6bd43;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+#nav-contact-link {
+    background-color: #e6bd43;
+    padding: 10px;
+}
+
+/* ----------------------------Footer---------------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: auto;
+}
+
+.footer-social a {
+    margin-left: 10px;
+}
+
+.footer-social i {
+    width: 15px; 
+    height: auto;
+    color: white;
+    font-size: 25px;
+}
+
+/* ----------------------------Responsive---------------------------- */
+
+@media screen and (max-width: 480px) {
+    .nav-bar {
+        text-align: center;
+    }
+
+    .logo {
+        float: none;
+    }
+
+    nav {
+        float: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    #nav-contact-link {
+        margin-top: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-text, .footer-social {
+        margin-bottom: 10px;
+    }
+
+    .footer-social a {
+        margin: 0 5px;
+    }
+}
