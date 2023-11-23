@@ -107,7 +107,8 @@ main {
     color: black;
     width: auto;
     height: 350px;
-    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     text-align: center;
     word-wrap: break-word;
     justify-content: center;
@@ -115,7 +116,7 @@ main {
 }
 
 .video-text h1 {
-    font-size: 2rem;
+    font-size: calc(30px + 6 * ((100vw - 320px) / 680));
     font-weight: 700;
 }
 
@@ -123,11 +124,10 @@ main {
     width: 70%;
     margin: 20px auto;
     text-align: center;
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
 }
 
 #sec1-read-more-btn {
-    width: 200px;
-    font-size: 0.7rem;
     font-weight: 700;
     padding: 10px; 
     border: none;
@@ -193,7 +193,7 @@ main {
 
 #sec3-read-more-btn:hover {
     background: black;
-    color: white;
+    color: #e6bd43;
 }
 
 #section4 {
@@ -223,6 +223,36 @@ main {
 
 .service p {
     font-size: 0.7rem;
+}
+
+.sign-up-newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(234, 234, 234);
+}
+
+.sign-up-newsletter input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+}
+
+.sign-up-newsletter button {
+    width: 100px;
+    font-weight: 700;
+    padding: 10px; 
+    background: #e6bd43;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.sign-up-newsletter button:hover {
+    background: black;
+    color: #e6bd43;
 }
 
 /* ----------------------------Footer---------------------------- */
@@ -257,6 +287,40 @@ footer {
 }
 
 /* ----------------------------Responsive---------------------------- */
+
+@media (any-hover: none) and (any-pointer: coarse) {
+    
+    nav ul li a:hover {
+        color: #444;
+    }
+
+    #nav-contact-link:hover {
+        background-color: none;
+        color: black;
+    }
+    
+    #sec1-read-more-btn:hover {
+        background: none;
+        color: black;
+    }
+
+    #sec3-read-more-btn:hover {
+        background: none;
+        color: black;
+    }
+
+    .sign-up-newsletter button:hover {
+        background: none;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .front-about-text {
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+}
 
 @media screen and (max-width: 480px) {
 
@@ -296,8 +360,10 @@ footer {
 
     #section1 {
         position: relative;
-        min-width: 350px;
-        overflow-x: hidden;
+    }
+
+    #section1 h1 {
+        margin: 10px;
     }
 
     #section1 img {
@@ -306,11 +372,6 @@ footer {
         height: 350px;
         position: absolute;
         object-fit: cover;
-    }
-
-    #sec3-read-more-btn:hover {
-        background: none;
-        color: black;
     }
 
     .subhead-text h1, .subhead-text p {
@@ -335,11 +396,34 @@ footer {
 
 }
 
+@media screen and (max-width: 250px) {
+    
+    #section1 img {
+        height: 400px;
+    }
 
-@media screen and (max-width: 700px) {
-    .front-about-text {
-        flex-wrap: wrap;
-        justify-content: center;
-        }
+    .video-text {
+        height: 400px;
+    }
 }
 
+
+
+#to-top-page {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#to-top-page i {
+    color: white;
+}
