@@ -16,13 +16,13 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 50px;
+    width: 40px;
     height: 50px;
+    border-radius: 5px;
     background-color: black;
-    border-radius: 50%;
     text-align: center;
     line-height: 50px;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
     z-index: 100;
 }
@@ -55,32 +55,32 @@ body {
     padding: 10px 0;
 }
 
-nav {
+.nav-link-container {
     float: right;
     margin-bottom: 25px;
 }
 
-nav ul {
+.nav-link-container ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav ul li {
+.nav-link-container ul li {
     display: inline-block;
     margin-left: 20px;
     padding-top: 25px;
     position: relative;
 }
 
-nav ul li a {
+.nav-link-container ul li a {
     color: #444;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-nav ul li a:hover {
+.nav-link-container ul li a:hover {
     color: #000;
 }
 
@@ -139,16 +139,19 @@ main {
 .video-text h1 {
     font-size: calc(30px + 6 * ((100vw - 320px) / 680));
     font-weight: 700;
+    margin: 0;
 }
 
 .video-text p {
     width: 70%;
     margin: 20px auto;
     text-align: center;
-    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(11px + 6 * ((100vw - 320px) / 680));
 }
 
 #sec1-read-more-btn {
+    text-decoration: none;
+    font-size: calc(8px + 6 * ((100vw - 320px) / 680));
     font-weight: 700;
     padding: 10px; 
     border: none;
@@ -227,7 +230,7 @@ main {
 
 .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
 }
@@ -276,6 +279,73 @@ main {
     color: #e6bd43;
 }
 
+/* ---------------Portfolio--------------- */
+
+#portfolio-section img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.portfolio-banner-text h1 {
+    font-size: calc(30px + 6 * ((100vw - 320px) / 680));
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    width: auto;
+    height: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------Section2------ */
+
+#explore-previous-jobs {
+    margin-inline: 20px;
+}
+
+#explore-previous-jobs h2 {
+    border-bottom: 2px solid #e6bd43;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: black;
+}
+
+#explore-previous-jobs nav ul {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 10px;
+    list-style: none;
+    padding: 25px 0; 
+}
+
+#explore-previous-jobs nav ul li{
+    margin-block: 10px;
+}
+
+#explore-previous-jobs nav ul li a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    padding: 8px; 
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+#explore-previous-jobs nav a:hover {
+    background: black;
+    color: #e6bd43;
+}
+
+
 /* ----------------------------Footer---------------------------- */
 
 footer {
@@ -296,8 +366,33 @@ footer {
     height: auto;
 }
 
+.footer-social {
+    float: right;
+    margin-bottom: 25px;
+}
+
+.footer-social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .footer-social a {
     margin-left: 10px;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .footer-social i {
@@ -311,7 +406,7 @@ footer {
 
 @media (any-hover: none) and (any-pointer: coarse) {
     
-    nav ul li a:hover {
+    .nav-link-container ul li a:hover {
         color: #444;
     }
 
@@ -427,3 +522,4 @@ footer {
         height: 400px;
     }
 }
+
