@@ -281,7 +281,11 @@ main {
 
 /* ---------------Portfolio--------------- */
 
-#portfolio-section img {
+.portfolio-section {
+    margin-inline: 20px;
+}
+
+#portfolio-banner img {
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -306,11 +310,7 @@ main {
     align-items: center;
 }
 
-/* ------Section2------ */
-
-#explore-previous-jobs {
-    margin-inline: 20px;
-}
+/* ------Explore------ */
 
 #explore-previous-jobs h2 {
     border-bottom: 2px solid #e6bd43;
@@ -345,6 +345,85 @@ main {
     color: #e6bd43;
 }
 
+/* ------Branding------ */
+
+#portfolio-branding h2 {
+    border-bottom: 2px solid #e6bd43;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: black;
+}
+
+#branding-images {
+    margin-block: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto; 
+    gap: 20px; 
+    row-gap: 35px;
+}
+
+.image-container {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+.image-container:hover {
+    transform: scale(1.05); 
+}
+
+.image-title {
+    margin-top: 10px; 
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+#last-image {
+    grid-column: span 3;
+}
+
+/* ------Design------ */
+
+#portfolio-design h2 {
+    border-bottom: 2px solid #e6bd43;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: black;
+}
+
+#design-images {
+    margin-block: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: auto auto;
+    gap: 20px; 
+    row-gap: 35px;
+}
+
+/* ------Development------ */
+
+#portfolio-dev h2 {
+    border-bottom: 2px solid #e6bd43;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: black;
+}
+
+#dev-images {
+    margin-block: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto auto;
+    gap: 40px; 
+    row-gap: 35px;
+}
 
 /* ----------------------------Footer---------------------------- */
 
