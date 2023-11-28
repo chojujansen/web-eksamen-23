@@ -2,11 +2,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    max-width: 100%;
+    max-width: 1600px;
     overflow-x: hidden;
 }
 
@@ -241,6 +241,10 @@ main {
     width: 200px;
 }
 
+.service i {
+    font-size: 25px;
+}
+
 .service h4 {
     font-size: 0.8rem;
     margin: 5px;
@@ -370,6 +374,7 @@ main {
     display: flex;
     flex-direction: column;
     transition: transform 0.5s ease;
+    max-width: 692px;
 }
 
 .image-container img {
@@ -447,7 +452,14 @@ main {
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.7);
     padding: 30px;
-    max-height: 70%; 
+    max-height: 70%;
+    min-width: 230px; 
+}
+
+.text-box h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-block: 10px;
 }
 
 .text-box p {
@@ -455,13 +467,19 @@ main {
     font-size: 0.6em;
 }
 
-button {
+#get-in-touch-btn {
     background-color: #e6bd43;
     color: black;
-    font-weight: 900;
+    font-weight: 700;
     border: none;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+#get-in-touch-btn:hover {
+    background-color: black;
+    color: #e6bd43;
 }
 
 /* ------Clients------ */
@@ -507,6 +525,7 @@ button {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 #contact-form-container {
@@ -542,10 +561,6 @@ textarea {
     height: 200px;
 }
 
-#contact-form {
-    padding: 20px;
-}
-
 input[type=submit] {
     background-color: #e6bd43;
     color: black;
@@ -555,7 +570,21 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: blue;
+    background-color: black;
+    color: #e6bd43;
+}
+
+#phone-number {
+    text-decoration: none;
+    color: black;
+}
+
+/* ------Map------ */
+
+#map iframe {
+    height: 400px;
+    width: 100%;
+    border: none;
 }
 /* ----------------------------Footer---------------------------- */
 
@@ -621,25 +650,14 @@ footer {
         color: #444;
     }
 
+    #sec1-read-more-btn:hover,
+    #sec3-read-more-btn:hover,
+    .sign-up-newsletter button:hover,
     #nav-contact-link:hover {
         background-color: none;
         color: black;
     }
-    
-    #sec1-read-more-btn:hover {
-        background: none;
-        color: black;
-    }
 
-    #sec3-read-more-btn:hover {
-        background: none;
-        color: black;
-    }
-
-    .sign-up-newsletter button:hover {
-        background: none;
-        color: black;
-    }
 }
 
 @media screen and (max-width: 700px) {
@@ -671,7 +689,8 @@ footer {
     }
 
     .nav-link-container ul li a {
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
     }
 
     #nav-contact-link {
@@ -710,6 +729,7 @@ footer {
     #design-images,
     #dev-images {
         margin-block: 15px;
+        grid-template-columns: 1fr;
     }
 
 /* ------------Footer------------ */
@@ -739,4 +759,3 @@ footer {
         height: 400px;
     }
 }
-
