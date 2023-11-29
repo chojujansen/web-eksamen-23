@@ -67,10 +67,10 @@
 </head>
 
 <body>
-    <a role="button" aria-label="To top of page" id="to-top-page" href="#top-of-page"><i class="fa-solid fa-arrow-up"></i></a>
-    <section role="navigation" class="nav-container">
+    <a role="navigation" aria-label="To top of page" id="to-top-page" href="#top-of-page"><i class="fa-solid fa-arrow-up"></i></a>
+    <section role="navigation" id="top-of-page" class="nav-container">
         <header class="nav-bar">
-            <a role="button" aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button" class="logo"></a>
+            <a role="navigation" aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button" class="logo"></a>
             <nav class="nav-link-container">
                 <ul class="nav-links">
                     <li><a class="nav-selected-link" href="index.html">Home</a></li>
@@ -89,7 +89,7 @@
             <div class="video-text">
                 <h1>Compeling headline</h1>
                 <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
-                <a role="button" aria-label="Read more about our services" href="#services-section" id="sec1-read-more-btn">Read more about our services</a>
+                <a role="navigation" aria-label="Read more about our services" href="#services-section" id="sec1-read-more-btn">Read more about our services</a>
             </div>
         </section>
 
@@ -103,7 +103,7 @@
             <div class="text-btn">
                 <h4>About Our Company</h4>
                 <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae.</p>
-                <button id="sec3-read-more-btn">Read more about us</button>
+                <a href="about.html" role="navigation" id="sec3-read-more-btn">Read more about us</a>
             </div>
         </section>
 
@@ -111,22 +111,22 @@
             <h1>Our Services</h1>
             <div class="services">
                 <article class="service">
-                    <i class="fa-solid fa-users"></i>
+                    <i aria-hidden="true" class="fa-solid fa-users"></i>
                     <h4>Branding</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </article>
                 <article class="service">
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <i aria-hidden="true" class="fa-solid fa-cloud-arrow-up"></i>
                     <h4>Branding</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </article>
                 <article class="service">
-                    <i class="fa-solid fa-code"></i>
+                    <i aria-hidden="true" class="fa-solid fa-code"></i>
                     <h4>Branding</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </article>
                 <article class="service">
-                    <i class="fa-solid fa-wifi"></i>
+                    <i aria-hidden="true" class="fa-solid fa-wifi"></i>
                     <h4>Branding</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </article>
@@ -143,7 +143,7 @@
 
     <footer>
         <figure class="footer-logo">
-            <a role="button" aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button"></a>
+            <a role="navigation" aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button"></a>
         </figure>
         <p class="footer-text">
             © Companyrights Companyname 2023
