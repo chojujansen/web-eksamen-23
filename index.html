@@ -9,13 +9,13 @@
     <meta name="twitter:site" content="@Iloceam.pleam" />
     <meta name="twitter:title" content="Iloceam Pleam" />
     <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec volutpat arcu, quis aliquam justo." />
-    <meta name="twitter:image" content="https://iloceampeam.no/img/image1" />
+    <meta name="twitter:image" content="https://iloceampleam.no/img/image1" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Iloceam Pleam" />
     <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec volutpat arcu, quis aliquam justo." />
-    <meta property="og:url" content="https://iloceampeam.no" />
-    <meta property="og:image" content="https://iloceampeam.no/img/image1" />
+    <meta property="og:url" content="https://iloceampleam.no" />
+    <meta property="og:image" content="https://iloceampleam.no/img/image1" />
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/img/logo1.png">
@@ -26,10 +26,10 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Iloceam Peam",
-      "image": "https://iloceampeam.no/img/image1",
+      "name": "Iloceam Pleam",
+      "image": "https://iloceampleam.no/img/image1",
       "@id": "",
-      "url": "https://iloceampeam.no",
+      "url": "https://iloceampleam.no",
       "telephone": "69 60 80 00",
       "address": {
         "@type": "PostalAddress",
@@ -67,12 +67,10 @@
 </head>
 
 <body>
-    <div id="to-top-page">
-        <a href="#top-of-page"><i class="fa-solid fa-arrow-up"></i></a>
-    </div>
-    <section id="top-of-page" class="nav-container">
+    <a role="button" aria-label="To top of page" id="to-top-page" href="#top-of-page"><i class="fa-solid fa-arrow-up"></i></a>
+    <section role="navigation" class="nav-container">
         <header class="nav-bar">
-            <a href="index.html"><img src="img/logo1.png" alt="" class="logo"></a>
+            <a role="button" aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button" class="logo"></a>
             <nav class="nav-link-container">
                 <ul class="nav-links">
                     <li><a class="nav-selected-link" href="index.html">Home</a></li>
@@ -85,13 +83,13 @@
     </section>
 
     <main>
-        <section id="section1">
+        <section role="banner" id="section1">
             <video id="front-page-video" autoplay muted loop><source src="img/mountains.mp4" type="video/mp4"></video>
-            <img src="img/sebastian-svenson-LpbyDENbQQg-unsplash.jpg" alt="">
+            <img src="img/sebastian-svenson-LpbyDENbQQg-unsplash.jpg" alt="blue and white round illustration">
             <div class="video-text">
                 <h1>Compeling headline</h1>
                 <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
-                <a href="#services-section" id="sec1-read-more-btn">Read more about our services</a>
+                <a role="button" aria-label="Read more about our services" href="#services-section" id="sec1-read-more-btn">Read more about our services</a>
             </div>
         </section>
 
@@ -101,7 +99,7 @@
         </section>
 
         <section class="front-about-text">
-            <img src="https://placehold.co/400x400" alt="">
+            <img src="https://placehold.co/400x400" alt="400 by 400 placeholder image">
             <div class="text-btn">
                 <h4>About Our Company</h4>
                 <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae.</p>
@@ -145,16 +143,16 @@
 
     <footer>
         <figure class="footer-logo">
-            <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
+            <a role="button" aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button"></a>
         </figure>
         <p class="footer-text">
             © Companyrights Companyname 2023
         </p>
         <nav class="footer-social">
             <ul>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a aria-label="Link to Facebook social profile" href="https://www.facebook.com/" target="_blank"><i aria-hidden="true" class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a aria-label="Link to Twitter social profile" href="https://twitter.com/" target="_blank"><i aria-hidden="true" class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a aria-label="Link to Linkedin social profile" href="https://www.instagram.com/" target="_blank"><i aria-hidden="true" class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>
     </footer>

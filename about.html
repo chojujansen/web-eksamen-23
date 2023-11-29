@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <a id="to-top-page" href="#top-of-page"><i class="fa-solid fa-arrow-up"></i></a>
-    <section id="top-of-page" class="nav-container">
+    <a role="button" aria-label="To top of page" id="to-top-page" href="#top-of-page"><i class="fa-solid fa-arrow-up"></i></a>
+    <section role="navigation" class="nav-container">
         <header class="nav-bar">
-            <a href="index.html"><img src="img/logo1.png" alt="" class="logo"></a>
+            <a role="button" aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button" class="logo"></a>
             <nav class="nav-link-container">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -27,7 +27,7 @@
 
     <main>
         <section class="banner">
-            <img src="img/pen-4337521_1920.jpg" alt="Banner Image">
+            <img src="img/pen-4337521_1920.jpg" alt="Photo of laptop, phone, pen and book">
             <div class="text-box">
                 <p>Company name</p>
                 <h2>About Our Company</h2>
@@ -73,9 +73,9 @@
         <section class="our-clients">
             <h1>Some of our clients</h1>
             <div class="clients">
-                <img src="img/logo1.png" alt="">
-                <img src="img/logo2.png" alt="">
-                <img src="img/logo3.png" alt="">
+                <img src="img/logo1.png" alt="Client logo Iloceam Pleam">
+                <img src="img/logo2.png" alt="Client logo X">
+                <img src="img/logo3.png" alt="Client logo X">
             </div>  
         </section>
 
@@ -84,37 +84,37 @@
             <div id="form-info">
                 <div id="contact-form-container">
                 <h3>Send us a message</h3>
-                    <form id="contact-form" action="/action_page.php">
-                        <label for="fname">Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Ola Nordmann...">
+                    <form id="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Ola Nordmann...">
 
-                        <label for="lname">Subject</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Branding...">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Branding...">
 
-                        <label for="subject">Message</label>
-                        <textarea id="subject" name="subject"></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea>
 
-                        <input type="submit" value="Send message">
+                        <input role="button" aria-label="Send message button" type="submit" value="Send message">
                     </form>
                 </div>
-                <article id="contact-info">
+                <address id="contact-info">
                     <h3>Contact Information</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur, odio, beatae consectetur voluptatum, enim delectus voluptates at nostrum recusandae vel optio ad. Esse at unde recusandae quibusdam, aspernatur maxime?</p>
                     <ul id="info">
                         <li>
-                            <span><i class="fa-solid fa-location-pin"></i></span>
-                            <span>B R A Veien 4, 1757 Halden</span>
+                            <span aria-hidden="true"><i class="fa-solid fa-location-pin"></i></span>
+                            <address>B R A Veien 4, 1757 Halden</address>
                         </li>
                         <li>
-                            <span><i class="fa-solid fa-phone"></i></span>
-                            <span><a id="phone-number" href="tel:123456789">69 60 80 00</a></span>
+                            <span aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                            <span aria-label="Phone number"><a id="phone-number" href="tel:123456789">69 60 80 00</a></span>
                         </li>
                         <li>
-                            <span><i class="fas fa-envelope"></i></span>
-                            <span><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></span>
+                            <span aria-hidden="true"><i class="fas fa-envelope"></i></span>
+                            <span aria-label="E-mail address"><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></span>
                         </li>
                     </ul>        
-                </article>
+                </address>
             </div>
         </section>
         <section id="map">
@@ -125,16 +125,16 @@
 
     <footer>
         <figure class="footer-logo">
-            <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
+            <a href="index.html"><img src="img/logo1.png" alt="Logo as home button"></a>
         </figure>
         <p class="footer-text">
             © Companyrights Companyname 2023
         </p>
         <nav class="footer-social">
             <ul>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a aria-label="Link to Facebook social profile" href="https://www.facebook.com/" target="_blank"><i aria-hidden="true" class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a aria-label="Link to Twitter social profile" href="https://twitter.com/" target="_blank"><i aria-hidden="true" class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a aria-label="Link to Linkedin social profile" href="https://www.instagram.com/" target="_blank"><i aria-hidden="true" class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>
     </footer>

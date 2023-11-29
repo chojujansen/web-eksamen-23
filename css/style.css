@@ -19,7 +19,7 @@ body {
     width: 40px;
     height: 50px;
     border-radius: 5px;
-    background-color: black;
+    background-color: #252525;
     text-align: center;
     line-height: 50px;
     font-size: 25px;
@@ -100,7 +100,7 @@ body {
 }
 
 #nav-contact-link:hover {
-    background-color: black;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -162,7 +162,7 @@ main {
 }
 
 #sec1-read-more-btn:hover {
-    background: black;
+    background: #252525;
     color: #e6bd43;
 }
 
@@ -217,7 +217,7 @@ main {
 }
 
 #sec3-read-more-btn:hover {
-    background: black;
+    background: #252525;
     color: #e6bd43;
 }
 
@@ -280,7 +280,7 @@ main {
 }
 
 .sign-up-newsletter button:hover {
-    background: black;
+    background: #252525;
     color: #e6bd43;
 }
 
@@ -346,7 +346,7 @@ main {
 }
 
 #explore-previous-jobs nav a:hover {
-    background: black;
+    background: #252525;
     color: #e6bd43;
     font-weight: bold;
 }
@@ -478,7 +478,7 @@ main {
 }
 
 #get-in-touch-btn:hover {
-    background-color: black;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -545,6 +545,8 @@ main {
 #info li {
     list-style: none;
     margin-block: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 input[type=text], textarea {
@@ -570,7 +572,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: black;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -648,6 +650,7 @@ footer {
     
     .nav-link-container ul li a:hover {
         color: #444;
+        font-weight: normal;
     }
 
     #sec1-read-more-btn:hover,
