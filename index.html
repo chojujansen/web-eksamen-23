@@ -57,6 +57,30 @@
         "opens": "00:00",
         "closes": "23:59"
       },
+      {
+        "@context": "http://schema.org/",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://iloceampleam.no"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Iloceam Pleam"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Choju Jansen",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://picsum.photos/200"
+            }
+        },
+        "headline": "About Our Company",
+        "image": "https://placehold.co/400x400",
+        "datePublished": "2023-11-29",
+        "dateModified": "2023-11-29"
+    },
       "sameAs": [
         "https://www.facebook.com/",
         "https://www.instagram.com/",
@@ -67,10 +91,10 @@
 </head>
 
 <body>
-    <a role="navigation" aria-label="To top of page" id="to-top-page" href="#top-of-page"><i class="fa-solid fa-arrow-up"></i></a>
+    <a aria-label="To top of page" id="to-top-page" href="#top-of-page"><i class="fa-solid fa-arrow-up"></i></a>
     <section role="navigation" id="top-of-page" class="nav-container">
         <header class="nav-bar">
-            <a role="navigation" aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button" class="logo"></a>
+            <a aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button" class="logo"></a>
             <nav class="nav-link-container">
                 <ul class="nav-links">
                     <li><a class="nav-selected-link" href="index.html">Home</a></li>
@@ -89,7 +113,7 @@
             <div class="video-text">
                 <h1>Compeling headline</h1>
                 <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
-                <a role="navigation" aria-label="Read more about our services" href="#services-section" id="sec1-read-more-btn">Read more about our services</a>
+                <a aria-label="Read more about our services" href="#services-section" id="sec1-read-more-btn">Read more about our services</a>
             </div>
         </section>
 
@@ -103,7 +127,7 @@
             <div class="text-btn">
                 <h4>About Our Company</h4>
                 <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae.</p>
-                <a href="about.html" role="navigation" id="sec3-read-more-btn">Read more about us</a>
+                <a href="about.html" id="sec3-read-more-btn">Read more about us</a>
             </div>
         </section>
 
@@ -134,7 +158,7 @@
         </section>
         <section class="sign-up-newsletter">
             <h1>Sign up for our newsletter</h1>
-            <form action="">
+            <form>
                 <input type="email" placeholder="Nora@epost.no">
                 <button>Sign me up!</button>
             </form>
@@ -143,7 +167,7 @@
 
     <footer>
         <figure class="footer-logo">
-            <a role="navigation" aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button"></a>
+            <a aria-label="Home button logo" href="index.html"><img src="img/logo1.png" alt="Logo as home button"></a>
         </figure>
         <p class="footer-text">
             © Companyrights Companyname 2023

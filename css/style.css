@@ -649,6 +649,13 @@ footer {
 
 /* ----------------------------Responsive---------------------------- */
 
+/* ----------Top-page---------- */
+@media (min-width: 1600px) {
+    #to-top-page {
+        right: calc((100vw - 1600px) / 1 + 50px);
+    }
+}
+
 @media (any-hover: none) and (any-pointer: coarse) {
     
     .nav-link-container ul li a:hover {
@@ -784,3 +791,4 @@ footer {
         height: 400px;
     }
 }
+
